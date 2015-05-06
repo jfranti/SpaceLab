@@ -33,6 +33,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
     //LIGHT'S ON VIEW---------------
     factory.inspect_body = function () {//LOOK AT BODY
         factory.pavels_body = 1;
+        factory.message = "THE BODY LIES BROKEN AND MANGLED, THE WORK OF SOME EVIL FORCE.";
     };
 
 
