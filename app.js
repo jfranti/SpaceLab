@@ -9,13 +9,13 @@ spacelab.config(function($stateProvider) {
     //     templateUrl: 'partials/gui.html',
     //     controller: 'PlotCtrl'
     //   },
-    //   'verb': {
-    //     templateUrl: 'partials/verb.html',
-    //     controller: 'PlotCtrl'
-    //   },
       'inventory': {
         templateUrl: 'partials/inventory.html',
         controller: 'InventoryCtrl'
+      },
+      'main': {
+        templateUrl: 'partials/main.html',
+        controller: 'PlotCtrl'
       },
     }
   });
