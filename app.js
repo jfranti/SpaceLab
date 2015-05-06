@@ -10,7 +10,7 @@ spacelab.config(function($stateProvider) {
     //     controller: 'PlotCtrl'
     //   },
     //   'verb': {
-    //     templateUrl: 'partials/verb.html',
+    //     templateUrl: 'partials/verbs.html',
     //     controller: 'PlotCtrl'
     //   },
       'inventory': {
