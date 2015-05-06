@@ -37,5 +37,17 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
     factory.drop_keycard = function () {
         factory.keycard = 0;
     };
+    //
+    //
+    // factory.drop = function (item) {
+    //     item = 0;
+    // }
+    //
+    //
+    // $scope.drop = function (item) {
+    //     factory.drop(item);
+    // }
+    //
+    //
     return factory;
 });
