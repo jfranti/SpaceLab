@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="spacelab">
-  <head>
-    <title>Space Lab</title>
-    <script src="lib/angular.js"></script>
-    <script src="lib/angular-ui-router.js"></script>
-    <script src="app.js"></script>
-    <script src="services/InventoryFactory.js"></script>
-    <script src="controllers/PlotFactory.js"></script>
-    <script src="controllers/InventoryController.js"></script>
-    <script src="controllers/PlotController.js"></script>
-    <!-- CSS -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-   </head>
+<head>
+  <title>Space Lab</title>
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <script src="services/InventoryFactory.js"></script>
+  <script src="controllers/PlotFactory.js"></script>
+  <script src="controllers/InventoryController.js"></script>
+  <script src="controllers/PlotController.js"></script>
+  <!-- CSS -->
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
 
-  <body>
-      <div ui-view="gui"></div>
-      <div ui-view="verbs"></div>
-      <div ui-view="inventory"></div>
-  </body>
+<body>
+  <div ui-view="gui" id="gui"></div>
+  <div ui-view="dialog" id="dialog"></div>
+  <div ui-view="inventory" id="inventory"></div>
+</body>
 </html>
