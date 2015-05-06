@@ -3,7 +3,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
 
 
 
-    //LIST OF VARIABLE PLOT ELEMENTS/EVENTS-------------------
+    //LIST OF VARIABLE PLOT ELEMENTS/EVENTS---------------------
 
 
     //MAIN ROOM----------------------
@@ -42,11 +42,11 @@ spacelab.factory('PlotFactory', function PlotFactory() {
     };
 
     factory.examine_pavels_shirt_pocket = function () {
-        factory.pavels_pocket = 1;
+        factory.pavels_shirt_pocket = 1;
     };
 
     factory.examine_pavels_pants_pocket = function () {
-        factory.pavels_pocket = 1;
+        factory.pavels_pants_pocket = 1;
     };
 
 
