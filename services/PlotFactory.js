@@ -12,8 +12,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
 
         // VIEW OF PAVEL'S BODY
     factory.pavels_hand = 0;
-    factory.pavels_right_pocket = 0;
-    factory.pavels_left_pocket = 0;
+    factory.pavels_right_pocket = 0;  //REMOVED PAVEL'S LEFT POCKET, WHICH CONTAINED EERIE BOX
     factory.keycard = 0;
     factory.message = " ";
 
@@ -39,11 +38,11 @@ spacelab.factory('PlotFactory', function PlotFactory() {
 
     //LIGHTS ON VIEW-------------------------------------------------------------------
     factory.examine_body = function () {//LOOK AT BODY
-        factory.message = "THE BODY LIES BROKEN AND MANGLED, THE WORK OF SOME EVIL FORCE.";
+        factory.pavels_body = 1;
     };
 
     factory.use_body = function () {
-        factory.pavels_body = 1;  //TAKES USER TO CRIME SCENE/BODY SCENE
+        factory.pavels_body = 1;  //TAKES USER TO CRIME SCENE/BODY SCENE. DOES THE SAME AS 'EXAMINE BODY'
     };
 
     factory.examine_lights_on = function () {
@@ -55,8 +54,8 @@ spacelab.factory('PlotFactory', function PlotFactory() {
     };
 
     factory.use_lori_initial_message = function () {
-      factory.lori = 1;  //THIS MESSAGE ONLY APPEARS THE FIRST TIME
-      factory.message = "HI CAPTAIN, I'M L.O.R.I., LINGUISTICALLY OPERERATED ROBOT INTELLIGENCE. I CONTROL THE SHIP'S FUNCTIONS DURING YOUR CRYOSLEEP AND WILL OCCASIONALLY GIVE YOU HINTS THROUGHOUT YOUR MISSION. CLICK THE MAGNIFYING GLASS AT THE BOTTOM OF THE SCREEN TO ACTIVATE THE 'EXAMINE' CURSOR, THEN CLICK ITEMS YOU'D LIKE TO INSPECT. CLICK THE 'HAND' ICON TO ACTIVATE THE 'USE' CURSOR, THEN CLICK ITEMS YOU'D LIKE TO USE OR MANIPULATE. THE BOX IN THE BOTTOM RIGHT CORNER OF THE SCREEN INDICATES YOUR INVENTORY. CLICK IT TO SEE WHAT ITEMS YOU HAVE ON YOU. WITHIN THE INVENTORY YOU CAN SELECT AN ITEM. WHEN YOU EXIT YOUR INVENTORY, YOUR SELECTED ITEM WILL APPEAR IN THE BOTTOM LEFT CORNER OF THE SCREEN."
+      factory.lori = 1;  //THIS MESSAGE ONLY APPEARS THE FIRST TIME YOU 'USE' LORI
+      factory.message = "HI CAPTAIN, I'M L.O.R.I., LINGUISTICALLY OPERERATED ROBOT INTELLIGENCE. I CONTROL THE SHIP'S FUNCTIONS DURING YOUR CRYOSLEEP AND WILL OCCASIONALLY GIVE YOU HINTS THROUGHOUT YOUR MISSION. CLICK THE MAGNIFYING GLASS AT THE BOTTOM OF THE SCREEN TO ACTIVATE THE 'EXAMINE' CURSOR, THEN CLICK ITEMS YOU'D LIKE TO INSPECT. CLICK THE 'HAND' ICON TO ACTIVATE THE 'USE' CURSOR, THEN CLICK ITEMS YOU'D LIKE TO PICK UP, USE, OR MANIPULATE. THE BOX IN THE BOTTOM RIGHT CORNER OF THE SCREEN INDICATES YOUR INVENTORY. CLICK IT TO SEE WHAT ITEMS YOU HAVE ON YOU. WITHIN THE INVENTORY YOU CAN SELECT AN ITEM. WHEN YOU EXIT YOUR INVENTORY, YOUR SELECTED ITEM WILL APPEAR IN THE BOTTOM LEFT CORNER OF THE SCREEN."
     };
 
     factory.use_lori_default_message = function () {  //THIS MESSAGE APPEARS EVERY TIME AFTER 'INITIAL'
@@ -90,23 +89,6 @@ spacelab.factory('PlotFactory', function PlotFactory() {
         factory.message = "IT'S EMPTY.";
     };
 
-    //LEFT POCKET (CONTAINS EERIE BOX)
-    factory.examine_pavels_left_pocket = function () {
-        factory.message = "THERE IS SOMETHING INSIDE.";
-    };
-
-    factory.use_pavels_left_pocket = function () {
-        factory.pavels_left_pocket = 1;  //REMOVES BOX. TRIGGERS NEXT TWO FUNCTIONS IF ATTEMPTED BY USER
-        factory.message = "I REMOVED SOME KIND OF EERIE LITTLE BOX."
-    };
-
-    factory.examine_pavels_empty_left_pocket = function () {
-        factory.message = "IT'S EMPTY.";
-    };
-
-    factory.use_pavels_empty_left_pocket = function () {
-        factory.message = "IT'S EMPTY.";
-    };
 
     factory.examine_errie_box = function () {
         factory.message = "IT'S AN EERIE LITTLE BOX OF INDETERMINATE MATERIAL. IT'S LOCKED."
@@ -158,6 +140,14 @@ spacelab.factory('PlotFactory', function PlotFactory() {
       factory.towel = 1; //REMOVES TOWEL FROM SCENE
     };
 
+    factory.examine_lockbox = function () {
+      factory.message = "IT'S AN EERIE LITTLE BOX OF INDETERMINATE MATERIAL."
+    };  
+
+    factory.use_lockbox = function () {
+      factory.lockbox = 1; //REMOVES LOCKBOX FROM THE SCENE
+    };
+
     //PAVEL'S MIRROR-----------------------------------------------------------
     factory.examine_mirror = function () {
       factory.mirror = 1;
@@ -169,3 +159,21 @@ spacelab.factory('PlotFactory', function PlotFactory() {
 
 
 });
+
+//LEFT POCKET (CONTAINS EERIE BOX)  ***THE BOX WAS MOVED TO PAVEL'S ROOM ****
+// factory.examine_pavels_left_pocket = function () {
+//     factory.message = "THERE IS SOMETHING INSIDE.";
+// };
+//
+// factory.use_pavels_left_pocket = function () {
+//     factory.pavels_left_pocket = 1;  //REMOVES BOX. TRIGGERS NEXT TWO FUNCTIONS IF ATTEMPTED BY USER
+//     factory.message = "I REMOVED SOME KIND OF EERIE LITTLE BOX."
+// };
+//
+// factory.examine_pavels_empty_left_pocket = function () {
+//     factory.message = "IT'S EMPTY.";
+// };
+//
+// factory.use_pavels_empty_left_pocket = function () {
+//     factory.message = "IT'S EMPTY.";
+// };
