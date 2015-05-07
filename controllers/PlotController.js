@@ -32,7 +32,15 @@ spacelab.controller('PlotCtrl', function PlotCtrl($scope, PlotFactory) {
       ng-hide="/../IMG/Main_Room_no_knife.png";
       ng-hide="/../IMG/knife_body.png";
       ng-show="/../IMG/CrewQuarters.png";
+      ng-hide="/../IMG/mirrorface_female.png";
+
     }
   }
 
+  $scope.look_at_mirror = function () {
+    if ($scope.mirror = 1) {
+      ng-hide="/../IMG/CrewQuarters.png";
+      ng-show="/../IMG/mirrorface_female.png";
+    }
+  }
 });

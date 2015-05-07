@@ -7,27 +7,25 @@
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-  <div class='container'>
-      <div ui-view="main"></div>
-      <div ui-view="gui"></div>
-      <div ui-view="verbs"></div>
-      <div ui-view="inventory"></div>
-
-
-
-</div><!--  = = = = = = NUTHIN TO SEE HERE BUT US SCRIPTS! = = = = = = = = -->
+  <div id="game-box">
+    <div ui-view="gui" id="gui"></div>
+    <div ui-view="verbs"></div>
+    <div ui-view="current_item" id="current_item"></div>
+    <div ui-view="cursors" id="cursors"></div>
+    <div ui-view="satchel" id="satchel"></div>
+    <div ui-view="inventory" id="inventory" ng-controller="InventoryCtrl"></div>
+  </div>
+  <!--  = = = = = = NUTHIN TO SEE HERE BUT US SCRIPTS! = = = = = = = = -->
   <script src="lib/angular.js"></script>
   <script src="lib/angular-ui-router.js"></script>
   <script src="lib/jquery-1.11.2.js"></script>
   <script src="app.js"></script>
   <script src="services/InventoryFactory.js"></script>
-  <script src="controllers/PlotFactory.js"></script>
+  <script src="services/PlotFactory.js"></script>
   <script src="controllers/InventoryController.js"></script>
   <script src="controllers/PlotController.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script src='js/app.js'></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
   <script>/* RATING SYSTEM?  DISPOSE */  $(document).ready(function() { $.material.init(); });</script>
 
