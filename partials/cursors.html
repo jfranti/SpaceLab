@@ -1,2 +1,6 @@
-<img src="../IMG/examine.png" alt="examine" id="examine">
-<img src="../IMG/use.png" alt="use" id="use">
+<img ng-click="activateExamineCursor()"
+     ng-class="{examine_selected: examine, examine_not_selected: !examine}"
+     src="../IMG/examine.png" alt="examine">
+<img ng-click="activateUseCursor()"
+     ng-class="{use_selected: use, use_not_selected: !use}"
+     src="../IMG/use.png" alt="use" id="use">

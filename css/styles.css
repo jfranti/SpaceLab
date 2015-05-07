@@ -19,6 +19,14 @@ body {
   margin: 0 auto;
 }
 
+#dialog {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  top: -400px;
+  left: 400px;
+  background-color: #799248;
+}
 
 #current_item {
   position: relative;
@@ -41,12 +49,24 @@ body {
   background-color: #666;
 }
 
-#examine {
+.examine_not_selected {
   height: inherit;
 }
 
-#use {
+.examine_selected {
   height: inherit;
+  border-top-left-radius: 10px;
+  background-color: #FFF;
+}
+
+.use_not_selected {
+  height: inherit;
+}
+
+.use_selected {
+  height: inherit;
+  border-top-right-radius: 10px;
+  background-color: #FFF;
 }
 
 #satchel {
@@ -96,14 +116,6 @@ body {
 #inv_pda {
 }
 
-#dialog {
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  width: 60%;
-  height: 15%;
-  background-color: #799248;
-}
 
 .modal-backdrop {
   z-index: -999999;
