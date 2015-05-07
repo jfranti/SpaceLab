@@ -3,17 +3,90 @@ body {
   color: #BEFF8A;
 }
 
-#sean_pic {
+#game-box {
+  display: block;
+  margin: 0 auto;
+  width: 1600px;
+  height: 900px;
+  overflow: hidden;
+
+  background-color: black;
+}
+
+.background {
   width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+#current_item {
+  position: relative;
+  width: 160px;
+  height: 90px;
+  top: -90px;
+  box-shadow: 0 0 15px 5px black;
+  border-top-right-radius: 10px;
+  background-color: #666;
+}
+
+#cursors {
+  position: relative;
+  width: 160px;
+  height: 90px;
+  top: -180px;
+  left: 720px;
+  box-shadow: 0 0 15px 5px black;
+  border-radius: 10px 10px 0 0;
+  background-color: #666;
+}
+
+#examine {
+  height: inherit;
+}
+
+#use {
+  height: inherit;
+}
+
+#satchel {
+  position: relative;
+  width: 160px;
+  height: 90px;
+  top: -270px;
+  left: 1440px;
+  box-shadow: 0 0 15px 5px black;
+  border-top-left-radius: 10px;
+  background-color: #666;
+}
+
+#satchel_img {
+  height: inherit;
+  display: block;
+  margin: 0 auto;
 }
 
 #inventory {
-  position: absolute;
-  width: 20%;
-  height: 30%;
-  top: 55%;
-  right: 2%;
-  background-color: #799248;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  top: -700px;
+  left: 1200px;
+  overflow: hidden;
+  background-color: #799884;
+}
+
+.inv_img {
+  height: 33%;
+}
+
+#inv_dog_tags {
+}
+
+#inv_knife {
+}
+
+#inv_pda {
 }
 
 #dialog {

@@ -5,7 +5,7 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
 
   $scope.use_keycard = function() {
     if ($scope.keycard === 1){
-      open door
+      // open door
       $scope.keycard = 0;
     }
   }
