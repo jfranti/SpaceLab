@@ -12,7 +12,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
 
     //MAIN ROOM----------------------
     factory.lights_main = 0; //LIGHTS OFF (DEFAULT). BECOMES 1 TO SWITCH SCENE TO 'LIGHTS ON'
-    factory.lori = 0;  //LORI GIVES INITIAL MESSAGE
+    factory.lori = 0;  //LORI GIVES INITIAL MESSAGE. BECOMES '1' AFTER YOU TALK TO HER, SWITCHES TO 'DEFAULT MESSAGE'
     factory.murder_weapon = 0; //MURDER WEAPON STILL IN BODY. WHEN USER 'USES' WEAPON, IT'S SET TO 1 AND REMOVED
 
     factory.pavels_body = 0; // BECOMES '1' WHEN USER 'USES' OR EXAMINES PAVEL'S BODY
@@ -32,7 +32,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
 
 
     //STARTING VIEW---------------------------------------------------------------------
-    factory.use_lights = function () {//TURN ON LIGHTS
+    factory.use_lights = function () {                          //TURN ON LIGHTS
         factory.lights_main = 1;
     };
 
@@ -165,15 +165,16 @@ spacelab.factory('PlotFactory', function PlotFactory() {
       factory.lockbox = 1; //REMOVES LOCKBOX FROM THE SCENE
     };
 
-    //PAVEL'S MIRROR-----------------------------------------------------------
+
     factory.examine_mirror = function () {
       factory.mirror = 1;
     };
-
+                                          //BOTH THESE FUNCTIONS SWITCH TO 'PAVEL'S MIRROR' SCENE
     factory.use_mirror = function () {
       factory.mirror = 1;
     };
 
+    //PAVEL'S MIRROR-----------------------------------------------------------
 
 });
 
