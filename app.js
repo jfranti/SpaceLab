@@ -13,6 +13,10 @@ spacelab.config(function($stateProvider) {
         templateUrl: 'partials/inventory.html',
         controller: 'InventoryCtrl'
       },
+      'main': {
+        templateUrl: 'partials/main.html',
+        controller: 'PlotCtrl'
+      },
       'dialog': {
         templateUrl: 'partials/dialog.html',
         controller: 'DialogCtrl'
