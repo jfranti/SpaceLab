@@ -10,7 +10,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
     factory.message = " ";  //DEFAULT SETTING FOR DIALOG BOX
 
 
-    //MAIN ROOM----------------------
+    //MAIN ROOM
     factory.lights_main = 0; //LIGHTS OFF (DEFAULT). BECOMES 1 TO SWITCH SCENE TO 'LIGHTS ON'
     factory.lori = 0;  //LORI GIVES INITIAL MESSAGE. BECOMES '1' AFTER YOU TALK TO HER, SWITCHES TO 'DEFAULT MESSAGE'
     factory.murder_weapon = 0; //MURDER WEAPON STILL IN BODY. WHEN USER 'USES' WEAPON, IT'S SET TO 1 AND REMOVED
@@ -80,7 +80,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
     //PAVEL'S BODY-------------------------------------------------------------------
 
     factory.examine_murder_weapon = function () {
-      factory.message = "IT'S A LARGE TACTICA KNIFE. CURRENTLY STUCK HALFWAY INTO PAVEL'S SEPTUM.";
+      factory.message = "IT'S A LARGE TACTICAL KNIFE. CURRENTLY STUCK HALFWAY INTO PAVEL'S SEPTUM.";
     };
 
     factory.use_murder_weapon = function () {
@@ -174,7 +174,8 @@ spacelab.factory('PlotFactory', function PlotFactory() {
       factory.mirror = 1;
     };
 
-    //PAVEL'S MIRROR-----------------------------------------------------------
+    //PAVEL'S MIRROR (END OF DEMO)-----------------------------------------------------------
+  return factory;
 
 });
 
