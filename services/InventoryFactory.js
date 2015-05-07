@@ -13,25 +13,25 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
     //END OF INVENTORY LIST
 
     //PICKUP ITEMS
-    factory.pickup_keycard = function () {
+    factory.use_keycard = function () {
         factory.keycard = 1;
     };
-    factory.pickup_murder_weapon = function () {
+    factory.use_murder_weapon = function () {
         factory.murder_weapon = 1;
     };
-    factory.pickup_lockbox = function () {
+    factory.use_lockbox = function () {
         factory.lockbox = 1;
     };
-    factory.pickup_towel = function () {
+    factory.use_towel = function () {
         factory.towel = 1;
     };
-    factory.pickup_soap = function () {
+    factory.use_soap = function () {
         factory.soap = 1;
     };
-    factory.pickup_pda = function () {
+    factory.use_pda = function () {
         factory.pda = 1;
     };
-    factory.pickup_dog_tags = function () {
+    factory.use_dog_tags = function () {
         factory.dog_tags = 1;
     };
     //END PICKUP ITEMS
