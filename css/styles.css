@@ -1,7 +1,7 @@
-body {
+/* body {
   background: #224345;
   color: #BEFF8A;
-}
+} */
 
 #game-box {
   display: block;
@@ -12,12 +12,18 @@ body {
 
   background-color: black;
 }
+/* #cursors { z-index: 5; }
+#verbs { z-index: 4; }
+#item { z-index: 3; }
+#satchel { z-index: 2; }
+#inventory { z-index: 1; }
+#gui { position: absolute; z-index: 0; } */
 
-.background {
+/* .background {
   width: 100%;
   display: block;
   margin: 0 auto;
-}
+} */
 
 #dialog {
   position: relative;
