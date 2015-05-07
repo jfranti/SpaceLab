@@ -2,13 +2,7 @@
 <html lang="en" ng-app="spacelab">
 <head>
   <title>Space Lab</title>
-  <script src="lib/angular.js"></script>
-  <script src="lib/angular-ui-router.js"></script>
-  <script src="app.js"></script>
-  <script src="services/InventoryFactory.js"></script>
-  <script src="controllers/PlotFactory.js"></script>
-  <script src="controllers/InventoryController.js"></script>
-  <script src="controllers/PlotController.js"></script>
+
   <!-- CSS -->
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -21,7 +15,20 @@
     <div ui-view="cursors" id="cursors"></div>
     <div ui-view="satchel" id="satchel"></div>
     <div ui-view="inventory" id="inventory" ng-controller="InventoryCtrl"></div>
+  </div><!--  = = =
+     = = = NUTHIN TO SEE HERE BUT US SCRIPTS! = = = = = = = = -->
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="lib/jquery-1.11.2.js"></script>
+  <script src="app.js"></script>
+  <script src="services/InventoryFactory.js"></script>
+  <script src="controllers/PlotFactory.js"></script>
+  <script src="controllers/InventoryController.js"></script>
+  <script src="controllers/PlotController.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src='js/app.js'></script>
 
-  </div>
+  <script>/* RATING SYSTEM?  DISPOSE */  $(document).ready(function() { $.material.init(); });</script>
+
 </body>
 </html>
