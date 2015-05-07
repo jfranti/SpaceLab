@@ -11,4 +11,5 @@ spacelab.factory('PlayerFactory', function PlayerFactory() {
       this.gender.push({ gender:gender })
     };
 
+    return factory;
 });
