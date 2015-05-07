@@ -1,19 +1,47 @@
 body {
   background: #224345;
   color: #BEFF8A;
+  display: block;
+  margin: 0 auto;
 }
 
-#sean_pic {
-  width: 100%;
+#game-box {
+  width: 1400px;
+  height: 1200px;
+  background-color: black;
+}
+
+.background {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 #inventory {
   position: absolute;
-  width: 20%;
-  height: 30%;
-  top: 55%;
-  right: 2%;
-  background-color: #799248;
+  width: 400px;
+  height: 300px;
+  top: 708px;
+  left: 1000px;
+  overflow: hidden;
+  background-color: #799884;
+}
+
+#satchel {
+  position: absolute;
+  width: 250px;
+  height: 192px;
+  top: 1008px;
+  left: 1150px;
+  background-color: #666666;
+}
+
+#current_item {
+  position: absolute;
+  height: 192px;
+  width: 250px;
+  top: 1008px;
+  background-color: #FFF;
 }
 
 #dialog {

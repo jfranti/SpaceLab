@@ -13,9 +13,13 @@ spacelab.config(function($stateProvider) {
         templateUrl: 'partials/inventory.html',
         controller: 'InventoryCtrl'
       },
-      'main': {
-        templateUrl: 'partials/main.html',
-        controller: 'PlotCtrl'
+      'current_item': {
+        templateUrl: 'partials/current_item.html',
+        controller: 'InventoryCtrl'
+      },
+      'satchel': {
+        templateUrl: 'partials/satchel.html',
+        controller: 'InventoryCtrl'
       },
       'dialog': {
         templateUrl: 'partials/dialog.html',
