@@ -14,7 +14,10 @@ spacelab.factory('PlotFactory', function PlotFactory() {
     factory.lights_main = 0; //LIGHTS OFF (DEFAULT). BECOMES 1 TO SWITCH SCENE TO 'LIGHTS ON'
     factory.lori = 0;  //LORI GIVES INITIAL MESSAGE
     factory.murder_weapon = 0; //MURDER WEAPON STILL IN BODY. WHEN USER 'USES' WEAPON, IT'S SET TO 1 AND REMOVED
+
     factory.pavels_body = 0; // BECOMES '1' WHEN USER 'USES' OR EXAMINES PAVEL'S BODY
+                            //ALSO SWITCHES TO CLOSE-UP OF PAVEL'S BODY
+
     factory.door = 0; //BECOMES '1' WHEN USER 'USES' KEYCARD ON PAVEL'S DOOR
 
     // VIEW OF PAVEL'S BODY
@@ -24,6 +27,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
     //PAVEL'S QUARTERS
     factory.lights_pavels_quarters = 0;  //DEFAULT 'DARK' SETTING. BECOMES '1' WHEN USER 'USES' LIGHTS
     factory.mirror = 0; //BECOMES '1' WHEN USER EXAMINES/USES MIRROR. CHANGES SCENE TO 'MIRROR'
+    factory.lockbox = 0; //BECOMES '1' WHEN USER 'USES' (TAKES) THE LOCKBOX
 
 
 
@@ -80,6 +84,8 @@ spacelab.factory('PlotFactory', function PlotFactory() {
     };
 
     factory.use_murder_weapon = function () {
+      factory.muder_weapon = 1; //REMOVES MURDER WEAPON FROM SCENE IN BOTH CLOSE-UP AND MAIN SCENES
+    };
 
 
     //HAND
