@@ -1,3 +1,26 @@
 body {
-  background: black;
+  background: #224345;
+  color: #BEFF8A;
+}
+
+#sean_pic {
+  width: 100%;
+}
+
+#inventory {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  top: 55%;
+  right: 2%;
+  background-color: #799248;
+}
+
+#dialog {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 60%;
+  height: 15%;
+  background-color: #799248;
 }
