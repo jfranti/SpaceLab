@@ -76,8 +76,14 @@ body {
   background-color: #799884;
 }
 
-.inv_img {
+.inv_div {
   height: 33%;
+}
+
+.inv_img {
+  height: 100%;
+  display: inline;
+  margin: 0 auto;
 }
 
 #inv_dog_tags {
