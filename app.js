@@ -37,4 +37,4 @@ var soundtrack = $("<audio id='soundtrack' src='audio/FoxSynergy_Blue_Space_08.m
 $("#soundtrack").append(soundtrack);
 soundtrack.attr('autoplay','autoplay');
 
-$('#soundtrack')[0].play();
+// $('#soundtrack')[0].play();
