@@ -68,11 +68,12 @@ body {
 
 #inventory {
   position: relative;
-  width: 400px;
+  width: 310px;
   height: 300px;
   top: -700px;
-  left: 1200px;
-  overflow: hidden;
+  left: 1290px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 15px 5px black;
   background-color: #799884;
 }
 
