@@ -17,6 +17,10 @@ spacelab.config(function($stateProvider) {
         templateUrl: 'partials/current_item.html',
         controller: 'InventoryCtrl'
       },
+      'cursors': {
+        templateUrl: 'partials/cursors.html',
+        controller: 'InventoryCtrl'
+      },
       'satchel': {
         templateUrl: 'partials/satchel.html',
         controller: 'InventoryCtrl'

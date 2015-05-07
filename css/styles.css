@@ -1,11 +1,11 @@
 body {
   background: #224345;
   color: #BEFF8A;
-  display: block;
-  margin: 0 auto;
 }
 
 #game-box {
+  display: block;
+  margin: 0 auto;
   width: 1600px;
   height: 900px;
   background-color: black;
@@ -24,25 +24,43 @@ body {
   top: 708px;
   left: 1000px;
   overflow: hidden;
-  background-color: #799884;
-}
-
-#satchel {
-  position: absolute;
-  width: 250px;
-  height: 192px;
-  top: 1008px;
-  left: 1150px;
-  background-color: #666666;
+  /*background-color: #799884;*/
 }
 
 #current_item {
-  position: absolute;
-  height: 192px;
-  width: 250px;
-  top: 1008px;
+  position: relative;
+  width: 160px;
+  height: 90px;
+  top: -90px;
   background-color: #FFF;
 }
+
+#cursors {
+  position: relative;
+  width: 160px;
+  height: 90px;
+  top: -180px;
+  left: 720px;
+  background-color: red;
+}
+
+#examine {
+  height: inherit;
+}
+
+#use {
+  height: inherit;
+}
+
+#satchel {
+  position: relative;
+  width: 160px;
+  height: 90px;
+  top: -270px;
+  left: 1440px;
+  background-color: #666666;
+}
+
 
 #dialog {
   position: absolute;
