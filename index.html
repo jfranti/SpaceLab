@@ -9,12 +9,12 @@
 </head>
 <body>
   <div id="game-box">
-    <div id="cursors" ui-view="cursors" id="cursors"></div>
-    <div id="verbs" ui-view="verbs"></div>
-    <div id="item" ui-view="current_item" id="current_item"></div>
-    <div id="satchel" ui-view="satchel" id="satchel"></div>
-    <div id="inventory" ui-view="inventory" id="inventory" ng-controller="InventoryCtrl"></div>
-    <div id="gui" ui-view="gui" id="gui"></div>
+    <div ui-view="gui" id="gui"></div>
+    <div ui-view="current_item" id="current_item"></div>
+    <div ui-view="cursors" id="cursors" ng-controller="ButtonCtrl"></div>
+    <div ui-view="satchel" id="satchel"></div>
+    <div ui-view="inventory" id="inventory" ng-controller="InventoryCtrl"></div>
+    <div ui-view="dialog" id="dialog"></div>
   </div>
   <!--  = = = = = = NUTHIN TO SEE HERE BUT US SCRIPTS! = = = = = = = = -->
   <script src="lib/angular.js"></script>
@@ -25,6 +25,7 @@
   <script src="services/PlotFactory.js"></script>
   <script src="controllers/InventoryController.js"></script>
   <script src="controllers/PlotController.js"></script>
+  <script src="controllers/ButtonController.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
   <script>/* RATING SYSTEM?  DISPOSE */  $(document).ready(function() { $.material.init(); });</script>

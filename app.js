@@ -18,7 +18,7 @@ spacelab.config(function($stateProvider) {
       },
       'cursors': {
         templateUrl: 'partials/cursors.html',
-        controller: 'InventoryCtrl'
+        controller: 'ButtonCtrl'
       },
       'satchel': {
         templateUrl: 'partials/satchel.html',
@@ -26,7 +26,7 @@ spacelab.config(function($stateProvider) {
       },
       'dialog': {
         templateUrl: 'partials/dialog.html',
-        controller: 'DialogCtrl'
+        controller: 'InventoryCtrl'
       }
     }
   });
