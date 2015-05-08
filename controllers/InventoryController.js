@@ -8,6 +8,17 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
   $scope.pda = InventoryFactory.pda;
   $scope.dog_tags = InventoryFactory.dog_tags;
 
+  $scope.inventory = false;
+
+  $scope.show_inventory = function() {
+    $scope.inventory = !$scope.inventory;
+  }
+
+  $scope.pickup_knife = function() {
+    InventoryFactory.use_murder_weapon;
+  }
+
+
 
   $scope.use_keycard = function() {
     if ($scope.keycard === 1){
