@@ -9,12 +9,12 @@
 </head>
 <body>
   <div id="game-box">
-    <div ui-view="gui" id="gui"></div>
-    <div ui-view="current_item" id="current_item"></div>
     <div ui-view="cursors" id="cursors" ng-controller="ButtonCtrl"></div>
-    <div ui-view="satchel" id="satchel"></div>
-    <div ui-view="inventory" id="inventory" ng-controller="InventoryCtrl"></div>
     <div ui-view="dialog" id="dialog"></div>
+    <div ui-view="current_item" id="current_item"></div>
+    <div ui-view="inventory" id="inventory" ng-controller="InventoryCtrl"></div>
+    <div ui-view="satchel" id="satchel"></div>
+    <div ui-view="gui" id="gui"></div>
   </div>
   <!--  = = = = = = NUTHIN TO SEE HERE BUT US SCRIPTS! = = = = = = = = -->
   <script src="lib/angular.js"></script>
