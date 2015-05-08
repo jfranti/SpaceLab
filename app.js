@@ -27,7 +27,7 @@ spacelab.config(function($stateProvider) {
     views: {
       'scene': {
         templateUrl: 'partials/scene.html',
-        controller: 'PlotCtrl'
+        controller: 'InventoryCtrl'
       },
       'gui': {
         templateUrl: 'partials/gui.html',
@@ -45,7 +45,7 @@ spacelab.config(function($stateProvider) {
     views: {
       'scene': {
         templateUrl: 'partials/body_view.html',
-        controller: 'PlotCtrl'
+        controller: 'InventoryCtrl'
       },
       'gui': {
         templateUrl: 'partials/gui.html',
@@ -63,7 +63,7 @@ spacelab.config(function($stateProvider) {
     views: {
       'scene': {
         templateUrl: 'partials/crew_quarters.html',
-        controller: 'PlotCtrl'
+        controller: 'InventoryCtrl'
       },
       'gui': {
         templateUrl: 'partials/gui.html',
@@ -81,7 +81,7 @@ spacelab.config(function($stateProvider) {
     views: {
       'scene': {
         templateUrl: 'partials/mirror.html',
-        controller: 'PlotCtrl'
+        controller: 'InventoryCtrl'
       },
     }
   });

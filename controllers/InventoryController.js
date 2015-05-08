@@ -7,15 +7,12 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
   $scope.soap = InventoryFactory.soap;
   $scope.pda = InventoryFactory.pda;
   $scope.dog_tags = InventoryFactory.dog_tags;
+  $scope.door = InventoryFactory.door_open;
 
   $scope.inventory = false;
 
   $scope.show_inventory = function() {
     $scope.inventory = !$scope.inventory;
-  }
-
-  $scope.pickup_knife = function() {
-    InventoryFactory.use_murder_weapon;
   }
 
 
@@ -30,6 +27,13 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
   $scope.use_murder_weapon = function() {
     InventoryFactory.use_murder_weapon();
   };
+
+  $scope.open_door = function() {
+    if (InventoryFactory.keycard === 1) {
+      Inventoryfactory.open_door();
+    }
+  };
+
 
 
   console.log(InventoryFactory.murder_weapon);
