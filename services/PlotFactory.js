@@ -118,7 +118,7 @@ spacelab.factory('PlotFactory', function PlotFactory() {
 
     factory.use_pavels_right_pocket = function () {
       factory.keycard = 1;  //REMOVES KEYCARD; TRIGGERS THE NEXT TWO FUNCTIONS IF ATTEMPTED BY USER
-      factory.message = "I REMOVED SOMETHING: IT'S THE KEYCARD TO PAVEL'S QUARTERS."
+      factory.message = "I REMOVED SOMETHING: IT'S THE KEYCARD TO PAVEL'S QUARTERS.";
     };
 
     factory.examine_pavels_empty_right_pocket = function () {
