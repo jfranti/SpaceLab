@@ -8,5 +8,6 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
       // open door
       $scope.keycard = 0;
     }
-  }
+  };
+  
 });

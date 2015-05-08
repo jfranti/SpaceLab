@@ -1,7 +1,9 @@
-/* body {
+body {
   background: #224345;
-  color: #BEFF8A;
-} */
+/*   color: #BEFF8A;
+ */  position: relative;
+}
+.background { width: 100%; display: block; margin: 0 auto; }
 
 #game-box {
   display: block;
@@ -9,125 +11,67 @@
   width: 1600px;
   height: 900px;
   overflow: hidden;
-
   background-color: black;
 }
-/* #cursors { z-index: 5; }
-#verbs { z-index: 4; }
-#item { z-index: 3; }
-#satchel { z-index: 2; }
-#inventory { z-index: 1; }
-#gui { position: absolute; z-index: 0; } */
 
-/* .background {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-} */
+#gui_pg { z-index: 3; position: absolute; }
+#dialog_pg { z-index: 2; position: absolute; }
+#scene_pg { z-index: 1; position: absolute; }
 
-#dialog {
-  position: relative;
-  width: 800px;
-  height: 600px;
-  top: -400px;
-  left: 400px;
-  background-color: #799248;
-}
-
-#current_item {
-  position: relative;
-  width: 160px;
-  height: 90px;
-  top: -90px;
-  box-shadow: 0 0 15px 5px black;
-  border-top-right-radius: 10px;
-  background-color: #666;
-}
-
+/* =========== GUI ELEMENTS ================ */
 #cursors {
-  position: relative;
   width: 160px;
   height: 90px;
-  top: -180px;
-  left: 720px;
   box-shadow: 0 0 15px 5px black;
   border-radius: 10px 10px 0 0;
   background-color: #666;
-}
+ }
+ .examine_not_selected { height: inherit; }
+ .examine_selected { height: inherit; border-top-left-radius: 10px; background-color: #FFF; }
+ .use_not_selected {  height: inherit; }
+ .use_selected { height: inherit; border-top-right-radius: 10px; background-color: #FFF; }
 
-.examine_not_selected {
-  height: inherit;
-}
-
-.examine_selected {
-  height: inherit;
-  border-top-left-radius: 10px;
-  background-color: #FFF;
-}
-
-.use_not_selected {
-  height: inherit;
-}
-
-.use_selected {
-  height: inherit;
-  border-top-right-radius: 10px;
-  background-color: #FFF;
-}
+ #inventory {
+  width: 310px;
+  height: 300px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 15px 5px black;
+  background-color: grey;
+ }
+ .inv_div {
+   height: 33%;
+ }
+ .inv_img {
+   height: 100%;
+   display: inline;
+   margin: 0 auto;
+ }
 
 #satchel {
-  position: relative;
   width: 160px;
   height: 90px;
-  top: -270px;
-  left: 1440px;
   box-shadow: 0 0 15px 5px black;
   border-top-left-radius: 10px;
+  background-color: #fff;
+ }
+#current_item {
+  width: 160px;
+  height: 90px;
+  box-shadow: 0 0 15px 5px black;
+  border-top-right-radius: 10px;
   background-color: #666;
 }
 
-#satchel_img {
-  height: inherit;
-  display: block;
-  margin: 0 auto;
-}
-
-#inventory {
-  position: relative;
-  width: 310px;
+#gui-container {
+  width: 1600px;
   height: 300px;
-  top: -700px;
-  left: 1290px;
-  border-radius: 10px 0 0 10px;
-  box-shadow: 0 0 15px 5px black;
-  background-color: #799884;
-}
-
-.inv_div {
-  height: 33%;
-}
-
-.inv_img {
-  height: 100%;
-  display: inline;
-  margin: 0 auto;
-}
-
-#inv_dog_tags {
-}
-
-#inv_knife {
-}
-
-#inv_pda {
-}
+  position: absolute;
+  bottom: -500px; }
 
 
-.modal-backdrop {
-  z-index: -999999;
-}
-
+.modal-backdrop { z-index: -999999; }
 .modal-content {
+  text-align: center;
   width: 600px;
   max-height: 600px;
   background: black;

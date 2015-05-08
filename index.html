@@ -2,20 +2,25 @@
 <html lang="en" ng-app="spacelab">
 <head>
   <title>Space Lab</title>
-
   <!-- CSS -->
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+
+
   <div id="game-box">
-    <div ui-view="gui" id="gui"></div>
-    <div ui-view="current_item" id="current_item"></div>
-    <div ui-view="cursors" id="cursors" ng-controller="ButtonCtrl"></div>
-    <div ui-view="satchel" id="satchel"></div>
-    <div ui-view="inventory" id="inventory" ng-controller="InventoryCtrl"></div>
-    <div ui-view="dialog" id="dialog"></div>
+    <div ui-view="gui" id="gui_pg" ng-controller="ButtonCtrl"></div>
+    <div ui-view="dialog" id="dialog_pg"></div>
+    <div ui-view="scene" id="scene_pg"></div>
   </div>
+
+
+
+
+
+
   <!--  = = = = = = NUTHIN TO SEE HERE BUT US SCRIPTS! = = = = = = = = -->
   <script src="lib/angular.js"></script>
   <script src="lib/angular-ui-router.js"></script>
@@ -27,8 +32,6 @@
   <script src="controllers/PlotController.js"></script>
   <script src="controllers/ButtonController.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-  <script>/* RATING SYSTEM?  DISPOSE */  $(document).ready(function() { $.material.init(); });</script>
 
 </body>
 </html>
