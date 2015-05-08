@@ -13,18 +13,11 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
 
   $scope.show_inventory = function() {
     $scope.inventory = !$scope.inventory;
-  }
-
-  $scope.use_keycard = function() {
-    if ($scope.keycard === 1){
-      $scope.door = 1;
-      $scope.keycard = 0;
-    }
   };
 
   $scope.pickup_keycard = function() {
     InventoryFactory.pickup_keycard();
-  }
+  };
 
   $scope.pickup_knife = function() {
     InventoryFactory.pickup_knife();
@@ -34,14 +27,19 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
     InventoryFactory.pickup_pda();
   };
 
+  console.log("CARD");
+  console.log(InventoryFactory.keycard);
+
+
   $scope.open_door = function() {
     if (InventoryFactory.keycard === 1) {
-      Inventoryfactory.open_door();
+      InventoryFactory.open_door();
     }
   };
 
 
+  console.log("DOOR");
+  console.log(InventoryFactory.door_open);
 
-  console.log(InventoryFactory.murder_weapon);
 
 });
