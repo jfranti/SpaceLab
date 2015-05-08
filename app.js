@@ -36,13 +36,29 @@ spacelab.config(function($stateProvider) {
       'dialog': {
         templateUrl: 'partials/dialog.html',
         controller: 'InventoryCtrl'
-      },
-      'cursors': {
-        templateUrl: 'partials/cursors.html',
-        controller: 'ButtonCtrl'
       }
     }
   });
+
+  $stateProvider.state('body_view', {
+    url: '3',
+    views: {
+      'scene': {
+        templateUrl: 'partials/body_view.html',
+        controller: 'PlotCtrl'
+      },
+      'gui': {
+        templateUrl: 'partials/gui.html',
+        controller: 'InventoryCtrl'
+      },
+      'dialog': {
+        templateUrl: 'partials/dialog.html',
+        controller: 'InventoryCtrl'
+      }
+    }
+  });
+
+
 });
 
 

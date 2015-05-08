@@ -6,8 +6,6 @@ body {
 .background { width: 100%; display: block; margin: 0 auto; }
 
 #game-box {
-  display: block;
-  margin: 0 auto;
   width: 1600px;
   height: 900px;
   overflow: hidden;
@@ -20,41 +18,55 @@ body {
 
 /* =========== GUI ELEMENTS ================ */
 #cursors {
-  width: 160px;
+  position: absolute;
+  top: 810px;
+  left: 720px;
+  width: 159px;
   height: 90px;
   box-shadow: 0 0 15px 5px black;
   border-radius: 10px 10px 0 0;
   background-color: #666;
- }
- .examine_not_selected { height: inherit; }
- .examine_selected { height: inherit; border-top-left-radius: 10px; background-color: #FFF; }
- .use_not_selected {  height: inherit; }
- .use_selected { height: inherit; border-top-right-radius: 10px; background-color: #FFF; }
+}
+.examine_not_selected { height: inherit; }
+.examine_selected { height: inherit; border-top-left-radius: 10px; background-color: #FFF; }
+.use_not_selected {  height: inherit; }
+.use_selected { height: inherit; border-top-right-radius: 10px; background-color: #FFF; }
 
- #inventory {
+#inventory {
+  position: absolute;
+  top: 450px;
+  left: 1290px;
   width: 310px;
   height: 300px;
   border-radius: 10px 0 0 10px;
   box-shadow: 0 0 15px 5px black;
   background-color: grey;
- }
- .inv_div {
-   height: 33%;
- }
- .inv_img {
-   height: 100%;
-   display: inline;
-   margin: 0 auto;
- }
+}
+
+.inv_div {
+  height: 33%;
+}
+
+.inv_img {
+  height: 100%;
+  display: inline;
+  margin: 0 auto;
+}
 
 #satchel {
+  position: absolute;
+  top: 810px;
+  left: 1440px;
   width: 160px;
   height: 90px;
   box-shadow: 0 0 15px 5px black;
   border-top-left-radius: 10px;
-  background-color: #fff;
- }
+  background-color: #666;
+}
+
 #current_item {
+  position: absolute;
+  top: 810px;
   width: 160px;
   height: 90px;
   box-shadow: 0 0 15px 5px black;
@@ -66,7 +78,9 @@ body {
   position: absolute;
   width: 1600px;
   height: 300px;
+  position: absolute;
   bottom: -500px;
+  overflow: hidden;
 }
 
 .modal-backdrop { z-index: -999999; }

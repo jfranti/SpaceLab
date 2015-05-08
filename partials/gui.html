@@ -1,38 +1,43 @@
 <div class='gui_container'>
 
-<img src="IMG/satchel.png"  id="satchel" alt="Satchel">
-
-<div id='inventory'>
-  <div class="inv_div">
-    <img src="../IMG/obj_dog_tags.png" alt="dog_tags" class="inv_img">
-    <img src="../IMG/obj_knife.png" alt="knife" id="inv_knife" class="inv_img">
-    <img src="../IMG/obj_pda.png" alt="pda" id="inv_pda" class="inv_img">
-  </div>
-  <div class="inv_div">
-    <img src="../IMG/obj_lockbox.png" alt="lockbox" id="inv_lockbox" class="inv_img">
-    <img src="../IMG/obj_soap.png" alt="soap" id="inv_soap" class="inv_img">
-    <img src="../IMG/obj_towel.png" alt="towel" id="inv_towel" class="inv_img">
-  </div>
-  <div class="inv_div">
-    <img ng-show="InventoryFactory.keycard" src="../IMG/obj_keycard.png" alt="keycard" id="inv_keycard" class="inv_img">
-  </div>
-  <!-- <img ng-hide="InventoryFactory.keycard" src="http://churchm.ag/wp-content/uploads/2013/09/keycard.jpg" alt="keycard" title="Keycard" class="inv_img"> -->
-</div> <!-- END INVENTORY -->
+  <img src="IMG/satchel.png"  id="satchel" alt="Satchel">
 
 
-<!-- SELECTIONS -->
-  <!-- CURSORS MOVED BACK TO CURSORS.HTML, WHICH... WHY DOES THAT EXIST?-->
-<!-- <img ng-click="activateExamineCursor()"
-     ng-class="{examine_selected: examine, examine_not_selected: !examine}"
-     src="../IMG/examine.png" alt="examine">
-<img ng-click="activateUseCursor()"
-     ng-class="{use_selected: use, use_not_selected: !use}"
-     src="../IMG/use.png" alt="use" id="use"> -->
+
+  <div id='inventory'>
+
+    <div class="inv_div">
+      <img src="../IMG/obj_dog_tags.png" alt="dog_tags" class="inv_img">
+      <img src="../IMG/obj_knife.png" alt="knife" id="inv_knife" class="inv_img">
+      <img src="../IMG/obj_pda.png" alt="pda" id="inv_pda" class="inv_img">
+    </div>
+    <div class="inv_div">
+      <img src="../IMG/obj_lockbox.png" alt="lockbox" id="inv_lockbox" class="inv_img">
+      <img src="../IMG/obj_soap.png" alt="soap" id="inv_soap" class="inv_img">
+      <img src="../IMG/obj_towel.png" alt="towel" id="inv_towel" class="inv_img">
+    </div>
+    <div class="inv_div">
+      <img ng-show="InventoryFactory.keycard" src="../IMG/obj_keycard.png" alt="keycard" id="inv_keycard" class="inv_img">
+    </div>
+    <!-- <img ng-hide="InventoryFactory.keycard" src="http://churchm.ag/wp-content/uploads/2013/09/keycard.jpg" alt="keycard" title="Keycard" class="inv_img"> -->
+  </div> <!-- END INVENTORY -->
+
+
+  <!-- SELECTIONS -->
+  <div id="cursors">
+    <img ng-click="activateExamineCursor()"
+         ng-class="{examine_selected: examine, examine_not_selected: !examine}"
+         src="../IMG/examine.png" alt="examine">
+    <img ng-click="activateUseCursor()"
+         ng-class="{use_selected: use, use_not_selected: !use}"
+         src="../IMG/use.png" alt="use" id="use">
+
+  </div>
   <!-- END CURSORS -->
 
   <!-- CURRENT ITEM -->
-<div id="current_item">
+  <div id="current_item">
 
-</div><!-- END SELECTIONS -->
+  </div><!-- END SELECTIONS -->
 
 </div>
