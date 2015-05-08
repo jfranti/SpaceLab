@@ -1,10 +1,7 @@
 <div class='gui_container'>
+  <img src="IMG/satchel.png" id="satchel" alt="Satchel" ng-click="show_inventory()">
 
-  <img src="IMG/satchel.png"  id="satchel" alt="Satchel">
-
-
-
-  <div id='inventory'>
+  <div id='inventory' ng-show="inventory">
 
     <div class="inv_div">
       <img ng-show="dog_tags" src="../IMG/obj_dog_tags.png" alt="dog_tags" class="inv_img">
