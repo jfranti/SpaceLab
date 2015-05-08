@@ -10,4 +10,14 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
     }
   };
 
+<<<<<<< HEAD
+=======
+  $scope.use_murder_weapon = function() {
+    InventoryFactory.use_murder_weapon();
+  };
+  
+
+  console.log(InventoryFactory.murder_weapon);
+
+>>>>>>> 229082daf9d2ba2a366c50adcad59347c18c0cdf
 });
