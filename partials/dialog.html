@@ -35,7 +35,7 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-warning" type="button" data-dismiss="modal">Leave Item</button>
-          <button  class="btn btn-success"type="button" ng-click="use_murder_weapon()" data-dismiss="modal">Keep Item</button>
+          <button  class="btn btn-success"type="button" ui-sref="lights_on" ng-click="use_murder_weapon()" data-dismiss="modal">Keep Item</button>
         </div>
       </div>
     </div>
@@ -81,6 +81,27 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="door" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="IMG/obj_keypad.png" alt="">
+        </div>
+        <div class="modal-body message">
+
+          It looks like this opens with a keycard...
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-warning" type="button" data-dismiss="modal">Leave Area</button>
+          <button  class="btn btn-success"type="button" ng-click="open_door()" data-dismiss="modal">Try to Open</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 

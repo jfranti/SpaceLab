@@ -12,6 +12,10 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
     factory.dog_tags = 0;
     //END OF INVENTORY LIST
 
+    //ACTIONS
+    factory.door_open = 0;
+    //END OF ACTIONS
+
     //PICKUP ITEMS
     factory.use_keycard = function () {
         factory.keycard = 1;
@@ -41,6 +45,12 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
         factory.keycard = 0;
     };
     //END DROP ITEMS
+
+    //ACTIONS
+    factory.open_door = function () {
+      factory.door_open = 1;
+    };
+    //END OF ACTIONS
 
     //CLEAR ALL ITEMS
     factory.clear_inventory = function () {
