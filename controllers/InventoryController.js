@@ -9,5 +9,12 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
       $scope.keycard = 0;
     }
   };
+
+  $scope.use_murder_weapon = function() {
+    InventoryFactory.use_murder_weapon();
+  };
   
+
+  console.log(InventoryFactory.murder_weapon);
+
 });

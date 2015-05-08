@@ -1,8 +1,29 @@
 var spacelab = angular.module('spacelab', ['ui.router']);
 
 spacelab.config(function($stateProvider) {
-  $stateProvider.state('start', {
+
+  $stateProvider.state('title', {
     url: '',
+    views: {
+      'scene': {
+        templateUrl: 'partials/title.html',
+        controller: 'PlotCtrl'
+      },
+    }
+  });
+
+  $stateProvider.state('start', {
+    url: '1',
+    views: {
+      'scene': {
+        templateUrl: 'partials/start.html',
+        controller: 'PlotCtrl'
+      },
+    }
+  });
+
+  $stateProvider.state('lights_on', {
+    url: '2',
     views: {
       'scene': {
         templateUrl: 'partials/scene.html',
