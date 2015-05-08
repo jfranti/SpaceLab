@@ -4,18 +4,18 @@
 
   <img src="IMG/Knife.png" alt="Knife in Pavel" style='position: absolute' ng-hide="knife" usemap="#scene_murder_scene"  no-repeat>
 
-  <img src="IMG/Open_Door.png" alt="Doorway" style='position: absolute' ng-show="door" usemap="#scene_murder_scene" data-toggle="modal" data-target="#hatch_quarters" shape="circle" coords="595, 265, 100" no-repeat>
+  <img src="IMG/Open_Door.png" alt="Doorway" style='position: absolute' ng-show="door" usemap="#scene_murder_scene" no-repeat>
 
 
   <map name="scene_murder_scene">
+    <!-- light -->
       <area alt="red_light" title="Warning Light" shape="rect" coords="1236,170,1116,130" />
-
+    <!-- green light -->
       <area alt="Green Safety Light" title="Green Safety light" shape="rect" coords="107,58,156,170" />
-
+    <!-- body -->
       <area alt="Pavel is in trouble!" title="Pavel is in trouble!" ui-sref='body_view' shape="poly" coords="322,572,327,526,522,540,771,595,735,639,364,600" />
-
-      <area alt="Front Safety Hatch" title="Front Safety Hatch" shape="circle" coords="595, 265, 100" />
-  </map>
+    <!-- doorway -->
+    <area alt="" title="" href="#" shape="poly" coords="484,280,504,334,541,367,637,368,678,332,692,254,665,195,607,164,541,174,497,209" data-toggle="modal" data-target="#door"/>  </map>
 
 
 

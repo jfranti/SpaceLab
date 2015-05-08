@@ -49,7 +49,7 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
     //ACTIONS
     factory.open_door = function () {
       factory.door_open = 1;
-    }
+    };
     //END OF ACTIONS
 
     //CLEAR ALL ITEMS
