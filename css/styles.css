@@ -62,12 +62,12 @@ body {
   background-color: #666;
 }
 
-#gui-container {
+#gui_container {
+  position: absolute;
   width: 1600px;
   height: 300px;
-  position: absolute;
-  bottom: -500px; }
-
+  bottom: -500px;
+}
 
 .modal-backdrop { z-index: -999999; }
 .modal-content {

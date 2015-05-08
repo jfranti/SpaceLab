@@ -9,5 +9,5 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
       $scope.keycard = 0;
     }
   };
-  
+
 });
