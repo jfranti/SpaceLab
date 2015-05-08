@@ -58,6 +58,36 @@ spacelab.config(function($stateProvider) {
     }
   });
 
+  $stateProvider.state('crew_quarters', {
+    url: '4',
+    views: {
+      'scene': {
+        templateUrl: 'partials/crew_quarters.html',
+        controller: 'PlotCtrl'
+      },
+      'gui': {
+        templateUrl: 'partials/gui.html',
+        controller: 'InventoryCtrl'
+      },
+      'dialog': {
+        templateUrl: 'partials/dialog.html',
+        controller: 'InventoryCtrl'
+      }
+    }
+  });
+
+  $stateProvider.state('mirror', {
+    url: '5',
+    views: {
+      'scene': {
+        templateUrl: 'partials/mirror.html',
+        controller: 'PlotCtrl'
+      },
+    }
+  });
+
+
+
 
 });
 
