@@ -15,10 +15,6 @@ spacelab.config(function($stateProvider) {
       'dialog': {
         templateUrl: 'partials/dialog.html',
         controller: 'InventoryCtrl'
-      },
-      'cursors': {
-        templateUrl: 'partials/cursors.html',
-        controller: 'ButtonCtrl'
       }
     }
   });
