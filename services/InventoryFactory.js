@@ -17,10 +17,10 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
     //END OF ACTIONS
 
     //PICKUP ITEMS
-    factory.use_keycard = function () {
+    factory.pickup_keycard = function () {
         factory.keycard = 1;
     };
-    factory.use_murder_weapon = function () {
+    factory.pickup_knife = function () {
         factory.murder_weapon = 1;
     };
     factory.use_lockbox = function () {
@@ -32,7 +32,7 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
     factory.use_soap = function () {
         factory.soap = 1;
     };
-    factory.use_pda = function () {
+    factory.pickup_pda = function () {
         factory.pda = 1;
     };
     factory.use_dog_tags = function () {
